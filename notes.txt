@@ -39,3 +39,61 @@ platform/hardware/ti/omap3.git
 platform/hardware/ti/wlan.git
 
 
+I love Android, really, I do.  A number of years ago, all of the major
+phone manufacturers came to the Linux kernel and Xorg developer
+community and asked us for help in creating a platform so that they
+could use Linux on phones in a unified way.  Their major requirements
+were:
+	- good lowlevel hardware support
+	- consistant userspace api for system libraries
+	- royalty free Java
+
+The Linux kernel has provided the first two things in spades.  Linux
+supports more hardware devices than any other operating system ever has
+in the history of computing, and it does so with a consistant user
+interface, namely POSIX.
+
+But it was that last item that we could not help out with.  Phone
+manufacturers, like any company that ships an cost-sensitive device,
+hate paying a per-device royalty.  And the companies realized that they
+needed a "write-once-run-anywhere" type application interface if they
+were going to expect people to be able to write applications for a wide
+range of hardware platforms and device configurations with any chance of
+success.
+
+So the phone companies went off and created LiMO and other consortuim
+groups, to try to nail down a binary-level application layer that tried
+to resolve the issue that they did not have a free Java that they could
+use, with the goal to try to solve the issue this way.  You all know how
+well that all worked out...
+
+Along comes Google with Android.  It consists of all of the above
+requirements.  The Linux kernel at the bottom, providing a "run time
+hardware abstraction layer" that makes it easy to change any hardware
+for the system quite easily without having to worry about the rest of
+the stack above.
+
+And the stack above the kernel?  It's all a "free Java", providing the
+wonderful api layer that developers can write to that enables
+cross-device compatibility with little-to-no changes to applications to
+ensure things work properly.
+
+They gave the whole thing away "for free" so that other manufacturers
+can use the platform, and it has been ported to a wide range of systems
+as a result.
+
+This is a wonderful thing, and I think Google has done an excellent
+engieering task here.  I feel it's the future of mobile computing, and
+strongly want to see it succeed.
+
+So, given all of that, let's look in detail as to how Google went about
+that lowest level of the layer, the kernel.  Hopefully by understanding
+the parts that Google "got wrong" when it came to the kernel, will help
+everyone understand how to deal with the community, and how to 
+
+
+
+Things Google did right:
+
+- released all the code
+
