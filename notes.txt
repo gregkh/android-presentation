@@ -1,0 +1,41 @@
+http://elinux.org/Android_Portal
+http://elinux.org/Android_Kernel_Features
+
+
+stuff not upstream:
+  - binder
+  - ashmem
+  - pmem
+  - logger
+  - wakelocks
+  - oom notifications
+  - alarm
+  - paranoid network security
+  - timed gpio
+
+
+kernel trees:
+	android.git.kernel.org
+	>kernel/common.git
+	>kernel/experimental.git  -> some experimental stuff
+	>kernel/linux-2.6.git  -> supposed to be kernel tree used in android version
+	>kernel/lk.git        -> not a kernel tree, but a bootloader
+	>kernel/msm.git
+	>kernel/omap.git  -> mirror of kernel tree maintained by texas instruments., supporting OMAP chips. usually based on kernel.org latest version, android products w OMAP chip can use this kernel port.
+	>kernel/tegra.git  -> nvidia kernel tree 
+
+
+platform/hardware/alsa_sound.git
+	ALSA based libaudio, audioflinger
+
+platform/hardware/broadcom/wlan.git
+platform/hardware/htc/dream.git
+platform/hardware/libhardware.git		hardware abstraction library
+platform/hardware/libhardware_legacy.git
+platform/hardware/msm7k.git			msm7k hardware glue
+platform/hardware/qcom/gps.git
+platform/hardware/ril.git			radio interface layer
+platform/hardware/ti/omap3.git
+platform/hardware/ti/wlan.git
+
+
