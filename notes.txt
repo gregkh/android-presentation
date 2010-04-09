@@ -24,10 +24,26 @@ kernel trees:
 	>kernel/omap.git  -> mirror of kernel tree maintained by texas instruments., supporting OMAP chips. usually based on kernel.org latest version, android products w OMAP chip can use this kernel port.
 	>kernel/tegra.git  -> nvidia kernel tree 
 
+6 kernel trees
+  common
+  	- 6 branches
+	- .25, .27 (2), .29 (2), .32
+  expermental
+  	- 8 branches
+	- .29, .33 .30, .32 (2), .33 (2)
+  msm
+  	- 10 branches
+	- .25(3), .27, .29 (4), .32(2)
+  omap
+  	- 3 branches
+	- .29 (2), .32
+  tegra
+  	- 6 branches
+	- .33 (3), .34(3)
 
-platform/hardware/alsa_sound.git
-	ALSA based libaudio, audioflinger
 
+
+platform/hardware/alsa_sound.git		ALSA based libaudio, audioflinger
 platform/hardware/broadcom/wlan.git
 platform/hardware/htc/dream.git
 platform/hardware/libhardware.git		hardware abstraction library
@@ -95,5 +111,8 @@ everyone understand how to deal with the community, and how to
 
 Things Google did right:
 
-- released all the code
+- picked the Linux kernel
+- released all the code at android.git.kernel.org
+- enforced the license of the kernel (gplv2)
+- 
 
