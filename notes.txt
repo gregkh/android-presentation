@@ -30,7 +30,7 @@ kernel trees:
 	- .25, .27 (2), .29 (2), .32
   expermental
   	- 8 branches
-	- .29, .33 .30, .32 (2), .33 (2)
+	- .29, .30, .32 (3), .33 (3)
   msm
   	- 10 branches
 	- .25(3), .27, .29 (4), .32(2)
@@ -116,3 +116,21 @@ Things Google did right:
 - enforced the license of the kernel (gplv2)
 - 
 
+
+diffstat of .34-rc2 patch:
+
+ 283 files changed, 47715 insertions(+), 363 deletions(-)
+
+driver stuff:
+	148 files changed, 23160 insertions(+), 192 deletions(-)
+fs stuff:
+	 45 files changed, 15786 insertions(+), 15 deletions(-)
+arch stuff:
+	 64 files changed, 7266 insertions(+), 82 deletions(-)
+core stuff:
+	 26 files changed, 1503 insertions(+), 74 deletions(-)
+
+50% driver
+30% filesystem
+15% arch
+ 5% core
