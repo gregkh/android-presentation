@@ -158,8 +158,11 @@ drivers:
 	USB Gadget subsystem rewrite (2008)
 	tegra USB gadget driver (2010)
 	tegra framebuffer driver (2010)
+	bluetooth fixes and extensions (2009)
+
 Security model:
 	Binder (2007)
+	"secure" networking (2008)
 
 filesystem:
 	YAFFS2
@@ -171,10 +174,17 @@ filesystem:
 networking:
 	PPP on L2TP Access Controller (2009)
 	PPP on PPTP Network server (2009)
+	sysfs files for networking controls (2008)
 
 core:
 	low memory killer (2008)
 	wakelocks (2008)
+	"early" suspend (2008)
+	ashmem (anonymous shared memory) (2008)
+	panic timeout
+	cgroup/cset changes (2009)
+	futex speedup due to broken userspace code (2009)
+	min_free_order_shift sysctl for swapless systems (2009)
 
 
 disable /dev/mem
