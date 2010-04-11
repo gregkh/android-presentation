@@ -134,3 +134,47 @@ core stuff:
 30% filesystem
 15% arch
  5% core
+
+
+drivers:
+	dcc_tty - arm tty driver (2007)
+	reset key driver (2008)
+	gpio input drivers (2008)
+	timed gpio driver (2008)
+	synaptics i2c touchscreen driver (2007) (added multitouch in July 2009)
+	ledtrig-sleep debug driver (2008)
+	apanic debug flash driver (2009) writes panic info to flash to catch it later
+	kernel debugger core (2008)
+	pmem driver (2008)
+	uid status (2009) collects per-user network statistics through a proc file
+	Bluetooth TI wl127x rfkill power control via GPIO (2009)
+	Loads of MMC changes (SDIO support, "paranoid mode, new host driver)
+	nvidia Tegra MDT NAND controller (2008)
+	RTC Alarm driver (2008)
+	Logger (2008)
+	ram console (2008)
+	Switch subsystem? (2008)
+	GPIO switch (2008)
+	USB Gadget subsystem rewrite (2008)
+	tegra USB gadget driver (2010)
+	tegra framebuffer driver (2010)
+Security model:
+	Binder (2007)
+
+filesystem:
+	YAFFS2
+	FAT Volume ID ioctl (2008)
+	no inotify event under some situations
+	Partition uevents (2009)
+	special proc file type
+
+networking:
+	PPP on L2TP Access Controller (2009)
+	PPP on PPTP Network server (2009)
+
+core:
+	low memory killer (2008)
+	wakelocks (2008)
+
+
+disable /dev/mem
